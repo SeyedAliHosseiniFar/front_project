@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSiteResturant</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--Custome css file link-->
+    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+</head>
+
+<body>
+
+    <!---header section start---->
+
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> رستوران یوشیتا</a>
+
+        <nav class="navbar">
+            <a href="#home">صفحه اصلی</a>
+            <a href="#Speciality">تخصص ما</a>
+            <a href="#Popular">مشهور ترین غذاها</a>
+            <a href="#gallery "> غذا ها</a>
+            <a href="#review">نظرات </a>
+            <a href="#Order">تماس با ما</a>
+
+        </nav>
+
+        <div class="btn-conatiner-shop">
+            <span class="sb-icon">
+                <img src="images/cart.svg" alt="icon">
+            </span>
+            <i class="sb-cart-number">5</i>
+        </div>
+    </header>
+
+    <!---header section End---->
+
+
+    <!---shoping card first----->
+    <section class="shoping-card-container">
+        <div class="icon-menu-shoping">
+            <div class="nav-mobile">
+                <a id="nav-toggle" class="nav-toggle.active"><span></span></a>
+            </div>
+        </div>
+
+        <div class="header-shoping-card">
+            <h2 class="heading-shoping-card">لیست غذا های افزوده شده</h2>
+        </div>
+
+        <div class="container-empty display">
+            <img class="pic-empty" src="images/fig-cart-empty.png" />
+            <p class="text-empty">سبد خرید خالی است</p>
+        </div>
+        <!-- <div class="shoping_card_food">
+            <div class="container_card_food">
+                <div class="img-card_container"><img class="img-card" src="images/test.png" /></div>
+                <div class="container_content_food">
+                    <div class="name-food_card">
+                        <h3>چلو کباب شیشلیک </h3>
+                    </div>
+                    <div class="name-food_price">
+                        <h3 class="price-card">248,000 تومان</h3>
+                    </div>
+                </div>
+                <div class="container-delete_iteam">
+                    <span class="del-food"><i class="fa-solid fa-minus"></i></span>
+                    <p class="number_food">2</p>
+                    <span class="del-food"><i class="fa-solid fa-plus"></i></span>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="cinatiner-main-ShopingCard"></div>
+
+        <div class="total-container">
+            <p class="sum-text">هزینه کل :</p>
+            <p class="sub-value"></p>
+        </div>
+        <div class="container-btn-buy">
+            <button class="btn-order-final">خالی کردن سبد خرید</button>
+    </section>
+
+
+    <!---shoping card End----->
+
+    <div class=" overlay ">
+
+    </div>
+
+    <!---home section start----->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>غذای ساخته شده با عشق</h3>
+            <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+            <a href="#" class="btn">الان سفارش بده</a>
+        </div>
+
+        <div class="images">
+            <img src="images/home-img.png" /> </div>
+    </section>
+    <!---home section End----->
+
+    <!---Speciality section first-->
+    <section class="Speciality" id="Speciality">
+
+        <h1 class="heading"><span>تخصص </span>ما</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="images" src="images/s-img-1.jpg" />
+                <div class="content">
+                    <img src="images/s-1.png" />
+                    <h3>همبرگر خوشمزه</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="images" src="images/s-img-2.jpg" />
+                <div class="content">
+                    <img src="images/s-2.png" />
+                    <h3>پیتزا خوشمزه</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="images" src="images/s-img-3.jpg" />
+                <div class="content">
+                    <img src="images/s-3.png" />
+                    <h3>بستنی سرد</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="images" src="images/s-img-4.jpg" />
+                <div class="content">
+                    <img src="images/s-4.png" />
+                    <h3>نوشیدنی سرد</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="images" src="images/s-img-5.jpg" />
+                <div class="content">
+                    <img src="images/s-5.png" />
+                    <h3>شیرینی های خوشمزه</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img class="images" src="images/s-img-6.jpg" />
+                <div class="content">
+                    <img src="images/s-6.png" />
+                    <h3>صبحانه سالم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!---Speciality section End-->
+
+
+    <!---popular section start-->
+
+
+    <section class="Popular" id="Popular">
+
+        <h1 class="heading">غذا های <span>مشهور</span> رستوران یوشیتا </h1>
+
+        <div class="box-container">
+
+            <div class="box box-popular-food">
+                <span id="1" class="price"> 250000  تومان</span>
+                <img src="images/p-1.jpg" alt="">
+                <h3>همبرگر خوشمزه</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span class="numberfoodNew">1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-popular-food">
+                <span class="price" id='2'> 80000  تومان </span>
+                <img src="images/p-2.jpg" alt="">
+                <h3>قارچ سوخاری </h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-popular-food">
+                <span class="price" id='3'> 100000  تومان </span>
+                <img src="images/p-3.jpg" alt="">
+                <h3>پیتزا استثنایی بیگ </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-popular-food">
+                <span class="price" id='4'> 62000  تومان </span>
+                <img src="images/p-4.jpg" alt="">
+                <h3>بال سو خاری</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-popular-food">
+                <span class="price" id='5'>8000 تومان</span>
+                <img src="images/p-5.jpg" alt="">
+                <h3>سالاد شیرازی </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-popular-food ">
+                <span class="price" id='6'> 9000  تومان </span>
+                <img src="images/p-6.jpg" alt="">
+                <h3>نوشیدنی سرد </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="container_btn_food">
+                    <a href="#" class="btn">الان سفارش بده</a>
+                    <a href="#" class="plus_food display"><i class="fa-solid fa-plus"></i></a>
+                    <div class="plus_mins_food display_btn_new">
+                        <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---popular section End-->
+
+    <!---Restaurant features section start-->
+
+    <section class="steps">
+        <div class="box">
+            <img src="images/step-1.jpg" />
+            <h3>غذای مورد علاقه </h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" />
+            <h3>تحویل رایگان و سریع</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" />
+            <h3>پرداخت آسان</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" />
+            <h3>از غذای خودت لذت ببر</h3>
+        </div>
+    </section>
+
+    <!---Restaurant features section End-->
+
+    <!---gallery food section first-->
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">گالری <span>غذا های موجود</span></h1>
+
+        <div class="box-container ">
+
+            <div class="box box-Galley-food">
+                <span class="price" id="10">76000  تومان</span>
+                <img src='images/p-10.jpg' />
+                <div class="content">
+                    <h3>پیتزا یونیک</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="11">95000  تومان</span>
+
+                <img src='images/p-11.jpg' />
+                <div class="content">
+                    <h3>چیکن استراگانوف</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="12">128000  تومان</span>
+                <img src='images/p-12.jpg' />
+                <div class="content">
+                    <h3>استیک مخصوص </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="13">78000  تومان</span>
+                <img src='images/p-13.jpg' />
+                <div class="content">
+                    <h3>لازانیا گوشت </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="14">52000  تومان</span>
+                <img src='images/p-14.jpg' />
+                <div class="content">
+                    <h3>سوپر ساندویچ نرمال </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="15">47000  تومان</span>
+                <img src='images/p-15.jpg' />
+                <div class="content">
+                    <h3>ساندویچ هات بیگ </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="16">81000  تومان</span>
+                <img src='images/p-16.jpg' />
+                <div class="content">
+                    <h3>استریپس نرمال </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="17">60000  تومان</span>
+
+                <img src='images/p-17.jpg' />
+                <div class="content">
+                    <h3>سیب زمینی باسس آلفردو </h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-Galley-food">
+                <span class="price" id="18">750000  تومان</span>
+
+                <img src='images/p-18.jpg' />
+                <div class="content">
+                    <h3>چیبس و پنیر میکس </h3>
+
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="container-btn_order">
+                        <a hr="#" class="btn">حالا سفارش بده</a>
+                        <a href="#" class="plus_food "><i class="fa-solid fa-plus"></i></a>
+                        <div class="plus_mins_food display_btn_new size-element">
+                            <a href="#"><i class="fa-solid fa-plus test-plus"></i></a>
+                            <span>1</span>
+                            <a href="#"><i class="fa-solid fa-minus test-mins"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---gallery food section end-->
+
+    <!---review  section Start-->
+
+
+    <section class="review" id="review">
+
+        <h1 class="heading">نظرات <span>مشتریان</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pic-1.png" />
+                <h3>محمد باقر علی محمدی</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد.</p>
+            </div>
+            <div class="box">
+                <img src="images/pic-2.png" />
+                <h3>زهرا محمدی</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد.</p>
+            </div>
+            <div class="box">
+                <img src="images/pic-3.png" />
+                <h3>رضا کریمی</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!---review  section End-->
+
+
+    <!---Contact us First--->
+
+    <section class="contactUs" id="Order">
+        <h1 class="heading">تماس <span>با ما</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/story1.jpg" />
+            </div>
+
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="نام" />
+                    <input type="text" placeholder="نام خانوادگی" />
+                </div>
+                <div class="inputbox">
+                    <input type="email" placeholder="ایمیل" />
+                    <input type="text" placeholder="موضوع پیام" />
+                </div>
+                <textarea placeholer="متن پیام"></textarea>
+                <input type="submit" value="ارسال پیام" class="btn">
+            </form>
+        </div>
+
+    </section>
+
+    <!---Contact us End--->
+
+    <!---Footer section First---->
+
+    <footer>
+
+
+        <div class="share">
+
+            <a href="#" class="btn-footer">فیسبوک</a>
+            <a href="#" class="btn-footer">توئیتر</a>
+            <a href="#" class="btn-footer">اینستگرام</a>
+            <a href="#" class="btn-footer">تلگرام</a>
+            <a href="#" class="btn-footer">واتساپ</a>
+
+
+        </div>
+
+
+
+        <h1 class="creadit">تمام حقوق این وب سایت متعلق به <span> برنامه نویس سایت:سیدعلی حسینی فر</span>می باشد
+        </h1>
+
+    </footer>
+    <!---End section First---->
+
+
+    <!---Scroll btn top first--->
+
+
+    <!-- loader  -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+    <!---Custome file js link---->
+
+
+
+    <script src=" js/Main.js "></script>
+
+
+
+</body>
+
+</html>

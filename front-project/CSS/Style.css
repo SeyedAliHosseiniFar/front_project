@@ -1,0 +1,1458 @@
+/* first style common*/
+
+@font-face {
+    font-family: font-dana;
+    src: url("../CSS/font-2/dana-demibold.eot"), url("../CSS/font-2/dana-demibold.otf"), url("../CSS/font-2/dana-demibold.svg"), url("../CSS/font-2/dana-demibold.ttf"), url("../CSS/font-2/dana-demibold.woff");
+}
+
+@font-face {
+    font-family: font-iransans;
+    src: url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.eot"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.otf"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.svg"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.ttf"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.woff");
+}
+
+@font-face {
+    font-family: font-yekan;
+    font-style: normal;
+    src: url("../CSS/fonts/IRANYekanLight.eot"), url("../CSS/fonts/IRANYekanLight.otf"), url("../CSS/fonts/IRANYekanLight.svg"), url("../CSS/fonts/IRANYekanLight.ttf"), url("../CSS/fonts/IRANYekanLight.woff");
+}
+
+@font-face {
+    font-family: font-number-farsi;
+    src: url("../CSS/number-font/IRANSansWeb.eot"), url("../CSS/number-font/IRANSansWeb.ttf"), url("../CSS/number-font/IRANSansWeb.woff"), url("../CSS/number-font/IRANSansWeb.woff2");
+}
+
+* {
+    font-family: font-iransans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+::selection {
+    color: #fff;
+    background-color: red;
+}
+
+body {
+    background-color: #f7f7f7;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+.display_btn {
+    display: none;
+}
+
+.display_btn2 {
+    display: none;
+}
+
+.display {
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.7rem;
+    padding: 1.5rem;
+    padding: #666;
+    font-family: font-dana;
+}
+
+.heading span {
+    color: red;
+}
+
+
+/* End style common*/
+
+
+/* First  Header Section*/
+
+.sb-icon {
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+    width: 55px;
+    height: 55px;
+    background-color: #f2f3f5;
+}
+
+.btn-conatiner-shop {
+    opacity: 1;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transform: scale(1);
+    height: 55px;
+    letter-spacing: 0;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.sb-cart-number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f5c332;
+    border-radius: 15px;
+    height: 20px;
+    padding: 0 6px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+/* End  Header Section*/
+
+
+/* First  shoping card*/
+
+.container_content_food {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.name-food_card {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+}
+
+.name-food_card h3 {
+    padding: 0 1em 0 0;
+}
+
+.name-food_price {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-card {
+    color: #ff8e28;
+    padding: 0 1em 0 0;
+    font-size: 1.3em;
+}
+
+.container-delete_iteam {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.del-food {
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #ff8e28;
+    height: 20%;
+    width: 18%;
+    background-color: #fef6f2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #b2bec3;
+}
+
+.header-shoping-card {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    justify-content: center;
+    border-bottom: solid 1px #8395a7;
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 5%;
+}
+
+.heading-shoping-card {
+    font-family: font-dana;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.total-container {
+    display: flex;
+    height: 70px;
+    font-size: 1.6em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-btn-buy {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-order-final {
+    background-color: #f1391f;
+    padding: 0.7em;
+    width: 90%;
+    border-radius: 5px;
+    font-family: font-dana;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.btn-order-final:hover {
+    background-color: #01aa55;
+}
+
+.container-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pic-empty {
+    width: 80%;
+}
+
+.text-empty {
+    padding: 1em;
+    font-size: 1.7em;
+}
+
+.shoping_card_food {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_card_food {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+}
+
+.number_food {
+    width: 50%;
+    padding: 0 1em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #ef4123;
+}
+
+.img-card_container_food {
+    width: 40%;
+    height: 50%;
+    margin: 0 0.5em;
+    background-color: #f8f7f3;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+header .logo {
+    font-weight: bolder;
+    color: black;
+    font-family: font-dana;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .logo i {
+    color: #ef4123;
+    font-size: 2rem;
+}
+
+header .navbar a {
+    font-size: 1.6rem !important;
+    margin-left: 2.5rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+header .navbar a:hover {
+    color: red;
+}
+
+#menu-bar {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    border: 0.1rem solid #666;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.5rem;
+    display: none;
+}
+
+
+/*shoping card first*/
+
+.shoping-card-container {
+    width: 300px;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+    transition: all 0.5s;
+    left: -100%;
+    position: fixed;
+    margin-top: 90px;
+    background-color: #ffffff;
+    border-top-right-radius: 5px;
+}
+
+.icon-menu-shoping {
+    height: 1%;
+    width: 100%;
+}
+
+.cinatiner-main-ShopingCard {
+    overflow: auto;
+    height: 50%;
+    margin: 0.2em 0;
+}
+
+.nav-mobile {
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    color: #fff;
+    border-top-right-radius: 5px;
+}
+
+#nav-toggle {
+    position: absolute;
+    right: -30px;
+    top: 5px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 1px;
+    width: 35px;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+    background-color: #fff;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+/* End  shoping card*/
+
+
+/*First cover project while show shoping card*/
+
+.overlay {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    left: 0;
+    visibility: visible;
+    transition: all 0.3s linear 0s;
+    transition: all 600ms ease;
+    display: none;
+}
+
+.opacity {
+    opacity: 0.4;
+    display: block;
+}
+
+
+/*End cover project while show shoping card*/
+
+
+/* fitst home section */
+
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url("../images/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    flex: 2.5 1 40rem;
+    padding-top: 6rem;
+}
+
+.home .images {
+    flex: 1 1 40rem;
+}
+
+.home .images img {
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    color: #333;
+    font-family: font-dana;
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+    text-align: justify;
+    width: 90%;
+    line-height: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 0.2rem solid red;
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: #ffff;
+}
+
+
+/* End home section */
+
+
+/* First Speciality section */
+
+.Speciality {
+    padding: 2rem 9%;
+}
+
+.Speciality .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.Speciality .box-container .box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.Speciality .box-container .box .images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.Speciality .box-container .box .content {
+    text-align: center;
+    background-color: #fff;
+    padding: 0.2rem;
+}
+
+.Speciality .box-container .box .content img {
+    margin: 1.5rem 0;
+}
+
+.Speciality .box-container .box .content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    font-family: font-dana;
+}
+
+.Speciality .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.Speciality .box-container .box:hover .images {
+    top: 0;
+}
+
+.Speciality .box-container .box:hover .content {
+    transform: translateY(150%);
+}
+
+
+/* First Speciality section */
+
+
+/* First Popular section */
+
+.container_btn_food {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.plus_food {
+    border-radius: 5px;
+    font-family: font-dana;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: solid 1px #ef4123;
+    font-weight: normal;
+    color: red !important;
+    padding: 0.5em;
+}
+
+.Popular .box-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.display {
+    display: none;
+}
+
+.plus_mins_food {
+    background-color: #ef4123;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+}
+
+.display_btn_new {
+    display: none;
+}
+
+.test-plus {
+    color: #fff;
+    background-color: #ef4123;
+}
+
+.test-mins {
+    color: #fff;
+    background-color: #ef4123;
+}
+
+.Popular .box-container .box {
+    background-color: #ffff;
+    border-radius: 1rem;
+    text-align: center;
+    flex: 1 1 27rem;
+    position: relative;
+    background-color: #F2F8FD !important;
+    box-shadow: 0px 0px 10px #ccc !important;
+}
+
+.Popular .box-container .box img {
+    height: 25rem;
+    object-fit: cover;
+    width: 95% !important;
+    border-radius: 0.5rem;
+}
+
+.Popular .box-container .box .price {
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    background-color: red;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.Popular .box-container .box h3 {
+    color: #333;
+    font-size: 1.9rem;
+    padding-top: 1rem;
+    font-family: font-dana;
+}
+
+.Popular .box-container .box {
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem 0rem;
+}
+
+.Popular {
+    padding: 2rem 9%;
+}
+
+
+/* End Popular section */
+
+
+/*Restaurant features section start*/
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.steps .box {
+    padding: 1rem;
+    text-align: center;
+    margin: 0 3rem;
+}
+
+.steps .box img {
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.steps .box h3 {
+    font-size: 1.9rem;
+    color: #333;
+    font-family: font-dana;
+    padding: 1rem 0;
+}
+
+
+/*Restaurant features section End*/
+
+
+/*first gallery foods */
+
+.size-element {
+    font-size: 1.5em;
+}
+
+.container-btn_order {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+    height: 25rem;
+    flex: 1 1 30rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery {
+    padding: 2rem 9%;
+}
+
+.gallery .box-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery .box-container .box .content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 1rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gallery .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+    font-family: font-dana;
+}
+
+.gallery .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 0.4rem 0;
+    line-height: 35px;
+}
+
+.gallery .box-container .box:hover .content {
+    top: 0%;
+}
+
+.gallery .box-container .box .price {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/*End gallery foods End*/
+
+
+/*First revirew customer*/
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.review .box-container .box {
+    text-align: center;
+    padding: 2.5rem;
+    border: 1rem solid #d7e0e6;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    flex: 1 1 30rem;
+    background-color: #015d70;
+    margin-top: 6rem;
+}
+
+.review .box-container .box img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: solid 1rem #fff;
+    margin-top: -8rem;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0.5rem 0;
+    font-family: font-dana;
+}
+
+.review .box-container .box i {
+    font-size: 2rem;
+    color: gold;
+    padding: 0.5rem 0;
+}
+
+.review {
+    padding: 2rem 9%;
+}
+
+.review .box-container .box p {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 2.2rem;
+}
+
+
+/*END revirew customer*/
+
+
+/*First contact us*/
+
+.contactUs {
+    padding: 2rem 9%;
+}
+
+.contactUs .row {
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex-direction: row-reverse;
+    border-radius: 0.5rem;
+}
+
+.contactUs .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.contactUs .row .image {
+    flex: 1 1 30rem;
+}
+
+.contactUs .row form {
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+
+.contactUs .row form .inputbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactUs .row form .inputbox input,
+.contactUs .row form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #333;
+    text-transform: none;
+    border: solid 0.1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    width: 49%;
+}
+
+.contactUs .row form textarea {
+    width: 100%;
+    resize: none;
+    height: 28rem;
+}
+
+.contactUs .row form .btn {
+    background-color: none;
+}
+
+.contactUs .row form .btn:hover {
+    background-color: red;
+}
+
+
+/*End contact us*/
+
+
+/*First section footer*/
+
+footer {
+    background-color: #282828;
+    text-align: center;
+    padding: 3rem 9% 0px 9%;
+}
+
+footer .share {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.creadit {
+    padding: 2.5rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.creadit span {
+    color: gold;
+}
+
+.btn-footer {
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    border: 0.2rem solid #fff;
+    color: gold;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.btn-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: gold;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+
+.btn-footer:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn-footer:hover {
+    color: #0b0320;
+}
+
+
+/*End section footer*/
+
+
+/*First loader image pizza fproject*/
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.fade-out {
+    top: -120%;
+    border: solid 1px black;
+}
+
+
+/*End loader image pizza fproject*/
+
+
+/*================= first section responsive project  */
+
+
+/*---First media queries for responsive project*/
+
+@media (max-width: 991px) {
+    header {
+        padding: 1rem;
+    }
+    .logo {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #666;
+    }
+    .heading-shoping-card {
+        font-family: font-dana;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .display {
+        display: none;
+    }
+    .display_btn_new {
+        display: none;
+    }
+    .review {
+        padding: 5rem 5%;
+    }
+    .cinatiner-main-ShopingCard {
+        overflow: auto;
+        height: 40%;
+        margin: 0.2em 0;
+    }
+    .total-container {
+        display: flex;
+        height: 20px;
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .icon-menu-shoping {
+        height: 1%;
+        width: 100%;
+    }
+    .container_card_food {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .container-btn-buy {
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-btn-buy {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_btn_food {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0em;
+    }
+    .plus_mins_food {
+        background-color: #ef4123;
+        height: 30px;
+        width: 100px;
+        color: #fff;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Popular .box-container .box img {
+        height: 25rem;
+        object-fit: cover;
+        width: 100% !important;
+        border-radius: 0.5rem;
+    }
+    .display {
+        display: none !important;
+    }
+    .display_btn_new {
+        display: none;
+    }
+    .plus_food {
+        border-radius: 5px;
+        font-family: font-dana;
+        color: #fff;
+        font-size: 0.8em;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border: solid 1px #ef4123;
+        font-weight: normal;
+        color: red !important;
+        padding: 0.5em;
+    }
+    .number_food {
+        font-size: 1em;
+    }
+    .contactUs .row form .inputbox input,
+    .contactUs .row form textarea {
+        width: 100%;
+    }
+    .review {
+        padding: 2rem 2%;
+    }
+    .contactUs {
+        padding: 2rem 2%;
+    }
+    .review .box-container .box {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        flex: 0.5 1 30rem;
+        background-color: #005b6f;
+        margin-top: 6rem;
+    }
+    .gallery {
+        padding: 3rem 2% !important;
+    }
+    .Popular {
+        padding: 3rem 2% !important;
+    }
+    .Popular .box-container .box .price {
+        position: absolute;
+        top: 2.2rem;
+        left: 2rem;
+        background-color: red;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+    .Popular .box-container .box {
+        padding: 1.5rem;
+        background-color: #ffff;
+        border-radius: 0.5rem;
+        text-align: center;
+        flex: 1 1 30rem;
+        position: relative;
+        margin-top: 2%;
+    }
+    .Popular .box-container .box h3 {
+        font-size: 1.7rem;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .Speciality {
+        padding: 2%;
+    }
+    .Popular {
+        padding: 0%;
+    }
+    .del-food {
+        font-size: 1em;
+    }
+    .price-card {
+        font-size: 0.9em;
+    }
+    .name-food_card {
+        font-size: 0.7em;
+    }
+    header {
+        padding: 0.5em;
+    }
+    html {
+        font-size: 80%;
+    }
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f7f7f7;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+    header {
+        justify-content: space-between;
+    }
+    header .navbar a {
+        margin: 1rem;
+        padding: 1rem;
+        display: block;
+        border: 1.9rem 0.2rem solid rgba(0, 0, 0, 0.1);
+        border-right: 0.5rem solid red;
+        background-color: #fff;
+        font-size: 1rem !important;
+    }
+    .logo {
+        font-size: 1.6em !important;
+        text-align: center;
+    }
+    header {
+        padding: rem 2% !important;
+    }
+    header .logo i {
+        display: none;
+    }
+    .heading-shoping-card {
+        font-family: font-dana;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .text-empty {
+        padding: 1em;
+        font-size: 1em;
+    }
+    .total-container {
+        display: flex;
+        height: 75px;
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn-order-final {
+        background-color: #f1391f;
+        padding: 0.4em;
+        width: 90%;
+        border-radius: 5px;
+        font-family: font-dana;
+        color: #fff;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .home .content {
+        flex: 1;
+        padding-top: 6rem;
+    }
+    .home .images {
+        flex: 1;
+    }
+    .home .images img {
+        width: 100%;
+        padding: 1rem;
+        animation: float 3s linear infinite;
+    }
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0rem);
+        }
+        50% {
+            transform: translateY(3rem);
+        }
+    }
+    .home .content h3 {
+        font-size: 1.8rem;
+        color: #333;
+        font-family: font-dana;
+        padding: 0rem 1.5rem;
+        margin-top: 1em;
+    }
+    .home .content p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: #666;
+        padding: 1.5rem 1.5rem;
+        text-align: justify;
+        width: 100%;
+    }
+    .btn {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        border: 0.2rem solid red;
+        color: red;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .Speciality .box-container .box .content h3 {
+        font-size: 1.5rem;
+        color: #333;
+        font-family: font-dana;
+    }
+    .Speciality .box-container .box .content p {
+        font-size: 1rem;
+        color: #666;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 280px) {
+    .logo {
+        font-size: 1.3em !important;
+        text-align: center;
+    }
+    .logo i {
+        display: none;
+    }
+    .shoping-card-container {
+        width: 270px;
+        height: 100%;
+        border-top-right-radius: 20px;
+    }
+    .heading-shoping-card {
+        font-size: 1.1rem;
+    }
+    .Popular .box-container .box .price {
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        background-color: red;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+    .Popular .box-container .box h3 {
+        color: #333;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    .gallery .box-container .box .content h3 {
+        font-size: 1.5rem;
+        color: #333;
+        font-family: font-dana;
+    }
+    .gallery .box-container .box .content p {
+        font-size: 1.2rem;
+        color: #666;
+        padding: 0.4rem 0;
+        line-height: 35px;
+    }
+    .gallery .box-container .box .price {
+        position: absolute;
+        bottom: 2rem;
+        left: 0.5rem;
+        background-color: red;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .Popular {
+        padding: 3rem 9%;
+    }
+}
+
+@media (max-width: 400px) {}
+
+
+/*---End media queries for responsive project*/
+
+
+/*================= first section responsive project  */
